@@ -12,10 +12,10 @@ if argv.pass
     encryption = "aes-256-cbc"
   if !argv.encrypt and !argv.decrypt
     console.log 'use --encrypt or --decrypt'
-    process.exit()
+    .exit
   if !argv.bytes
     console.log 'we need something to encrypt or decrypt, use --bytes <whatever here>'
-    process.exit()
+    .exit
   en = crypto.createCipher(encryption,argv.pass)
   de = crypto.createDecipher(encryption,argv.pass)
   encrypted = ""
