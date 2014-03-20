@@ -7,13 +7,13 @@ if argv.pass
   if argv.encryption
     encryption = argv.encryption
   else
-    encryption = "aes-256-cbc"
+    encryption = "aes-256-cbc" # if none given default to aes-256-cbc
   if !argv.encrypt and !argv.decrypt
     console.log 'use --encrypt or --decrypt'
-    .exit
+    .exit # stop here if not defined
   if !argv.bytes
     console.log 'we need something to encrypt or decrypt, use --bytes <whatever here>'
-    .exit
+    .exit # stop here if not defined
   en = crypto.createCipher(encryption,argv.pass)
   de = crypto.createDecipher(encryption,argv.pass)
   encrypted = ""
