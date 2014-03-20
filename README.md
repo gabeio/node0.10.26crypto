@@ -1,4 +1,15 @@
-node0.10.26crypto
+simpcrypto
 =================
 
-example of 0.10.26 crypto should look like
+a simple script to use node.js's crypto api at command line level
+
+requirements:
+optimist@0.6.0
+
+developer dependencies:
+coffee-script@1.7.1
+
+node:
+coffee@1.7.1
+or
+node@0.10.*
