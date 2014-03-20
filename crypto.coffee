@@ -2,9 +2,7 @@
 argv = require 'optimist'
   .argv
 crypto = require 'crypto'
-
 crypto.DEFAULT_ENCODING = 'base64'
-
 if argv.pass
   if argv.encryption
     encryption = argv.encryption
