@@ -1,0 +1,27 @@
+{
+  "name": "simplecrypt",
+  "preferGlobal": false,
+  "version": "0.10.26",
+  "author": "Gabe [lastname not given] <gabe@shov.me>",
+  "description": "small script for quick encrypt decrypt using whatever is available on your computer...",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabeio/simpcrypto.git"
+  },
+  "keywords": [
+    "encryption",
+    "encrypt",
+    "decrypt",
+    "decryption",
+    "simple"
+  ],
+  "dependencies" : {
+    "optimist" :  "0.6.0"
+  },
+  "devDependencies": {
+    "coffee-script" : "1.7.1"
+  },
+  "engines": {
+    "node": "0.10.*"
+  }
+}
