@@ -1,5 +1,5 @@
 #import the crypto library
-argv = require 'optimist'
+argv = require 'yargs'
   .argv
 crypto = require 'crypto'
 crypto.DEFAULT_ENCODING = 'base64'
